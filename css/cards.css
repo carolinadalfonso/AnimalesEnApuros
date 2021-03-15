@@ -1,0 +1,109 @@
+#card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  height: 100%;
+  margin: 50px;
+  display: flex;
+  border-radius: 20px 20px 10px 10px;
+  flex-direction: column;
+  width: 280px;
+  box-shadow: 0px 0px 15px 0px rgba(41, 48, 108, 0.6);
+}
+
+.card .title {
+  height: 80px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  font-family: "Poppins";
+}
+
+.card .footer {
+  border-radius: 0 0 10px 10px;
+  padding: 10px 0 10px 0;
+}
+
+#mercado-pago.card .content {
+  background-color: #50b4e9;
+}
+
+#mercado-pago.card .title {
+  background: url("../images/mercado_pago.png") no-repeat #29306c center;
+}
+
+#mercado-pago.card .footer {
+  background: url("../images/medios.png") no-repeat #ececec center;
+  height: 50px;
+}
+
+#transferencia.card {
+  width: 350px;
+  background-color: #9d5daa;
+}
+
+#transferencia.card .content {
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 30px;
+  background-color: #50b4e9;
+  color: white;
+  font-size: large;
+  text-shadow: 0px 0px 5px rgb(41, 48, 108);
+}
+
+#transferencia.card .title {
+  background: url("../images/transferencia.png") no-repeat #29306c center;
+}
+
+#transferencia.card .footer {
+  background: url("../images/banco_ciudad.png") no-repeat #29306c center;
+  height: 50px;
+}
+
+a.donate-button {
+  font-family: "Poppins";
+  background-image: url("../images/favicon.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 15px;
+  width: 180px;
+  display: inline-block;
+  padding: 10px 5px 10px 30px;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  background-color: #29306c;
+  box-shadow: inset 0 -10px 0 -5px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  position: relative;
+}
+a.donate-button:active {
+  top: 0.1em;
+}
+a.donate-button:hover {
+  background-color: #3e4581;
+  font-weight: 600;
+}
+@media all and (max-width: 30em) {
+  a.donate-button {
+    display: block;
+  }
+}

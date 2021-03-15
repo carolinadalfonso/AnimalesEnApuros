@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "Lora";
+}
+
+#wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+#content {
+  flex: 1;
+  justify-content: center;
+  width: 50%;
+  padding-bottom: 100px;
+}
+
+#content.adopcion {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content p {
+  text-align: justify;
+  line-height: 30px;
+  font-size: large;
+}
+
+#content h2 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: #404040;
+  color: whitesmoke;
+  font-family: "Poppins";
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 250px;
+  padding: 0px 60px 0px 150px;
+}
+
+.navegador {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.navegador li {
+  display: inline;
+  margin: 0 20px 0 0;
+}
+.navegador li a {
+  padding: 2px 5px 5px 5px;
+  color: #666;
+  text-decoration: none;
+}
+.navegador li a:hover {
+  border-bottom: #404040 2px solid;
+  color: #404040;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: large;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recuadro {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #ff7ac5;
+  width: 300px;
+  padding: 15px 15px 15px 15px;
+  margin-top: 15px;
+}
+.recuadro img {
+  max-height: 300px;
+}
+
+#side-image {
+  width: 250px;
+  display: flex;
+  align-items: left;
+  margin-left: 300px;
+}
+
+.imagen-mascota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-mascota img {
+  max-height: 500px;
+}
+
+#adopcion {
+  margin: 0px 50px 0px 50px;
+}
+
+#confirm {
+  height: 100px;
+  background-color: white;
+  position: relative;
+  display: none;
+}

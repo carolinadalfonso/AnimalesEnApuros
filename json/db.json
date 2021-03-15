@@ -1,0 +1,86 @@
+{
+    "mascotas": {
+        "adopciones": [
+            {
+                "nombre": "Pablito",
+                "edad": "5 meses",
+                "tamaño": "Mediano",
+                "tipo": "Perro",
+                "descripcion": "Pablito es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
+                "foto": "../images/mascotas/pablito.jpeg"
+            },
+            {
+                "nombre": "Pauli",
+                "edad": "7 meses",
+                "tamaño": "Mediano",
+                "tipo": "Perro",
+                "descripcion": "Pauli es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
+                "foto": "../images/mascotas/pauli.jpeg"
+            },
+            {
+                "nombre": "Coca",
+                "edad": "7 meses",
+                "tamaño": "Mediano",
+                "tipo": "Perro",
+                "descripcion": "Coca es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
+                "foto": "../images/mascotas/coca.jpeg"
+            },
+            {
+                "nombre": "Rocky",
+                "edad": "2 años",
+                "tamaño": "Grande",
+                "tipo": "Perro",
+                "descripcion": "Rocky es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
+                "foto": "../images/mascotas/rocky.jpeg"
+            },
+            {
+                "nombre": "Ugi2",
+                "edad": "2 años",
+                "tamaño": "Grande",
+                "tipo": "Perro",
+                "descripcion": "Perroooooooooooooooooooo",
+                "foto": "https://www.lavanguardia.com/files/image_449_220/uploads/2020/12/01/5fca4b0d19f25.jpeg"
+            },
+            {
+                "nombre": "Ugi2",
+                "edad": "2 años",
+                "tamaño": "Grande",
+                "tipo": "Perro",
+                "descripcion": "Perroooooooooooooooooooo",
+                "foto": "https://www.lavanguardia.com/files/image_449_220/uploads/2020/12/01/5fca4b0d19f25.jpeg"
+            }
+        ],
+        "especiales": [
+            {
+                "nombre": "Nala",
+                "foto": "https://scontent.faep9-1.fna.fbcdn.net/v/t1.0-9/117578411_3312826735446796_4633338627522811968_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=x1dy1hHgXUIAX-1R09b&_nc_ht=scontent.faep9-1.fna&oh=84f4ffbe818ce675b2e711de5b576111&oe=6073CD31",
+                "descripcion": "Los análisis VIF/VILEF dieron NEGATIVOS!!🥳🥳🥳🥳 \n Estamos muy felices 🎈🎊🎉 \n Empezó a comer Recovery, se bajó media lata ayer 🤭😋. \n Tuvo algo de fiebre, pero es normal, por la patita. \n Pasaron la cirugía para el lunes y con las donaciones Lucas va cubriendo los días de internación. \n Necesitamos juntar los $15.000 de la cirugía. 🙏🙏 \n 🐱Internación $2400 aprox. Eso varía según el vendaje y medicación que le den en el día. \n 🐱Cirugía de pata fracturada $15.000 \n Gracias a quienes ayudan, a los fans de la página de Vecino, a los padrinos Animales en Apuros y a los amigos por todos lados 💪💪 \n No dejemos sola a Nala ni a Lucas, aun quedan días de internación, y como veran los montos que pagar se hacen muy altos. \n ¿Nos dan una mano?",
+                "link": "https://www.facebook.com/AdopcionesEspeciales2015/photos/3312826732113463/",
+                "donacion": [
+                    {
+                        "monto": "100",
+                        "link": "#"
+                    },
+                    {
+                        "monto": "200",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "rifas": [
+        {
+            "fecha": "Abril 2020",
+            "descripcion": "¡Feliz día del animal para todos! Y sobre todo para los mas consentidos de cada hogar 😍😍🐱🐶🐖🐏🐏🐢🦢🐔🕊🦆🐭🐟🦜",
+            "imagen": "../images/rifas/dia_animal_2020.jpg",
+            "link": "https://facebook.com/story.php?story_fbid=2846835492045925&id=967502963312530"
+        },
+        {
+            "fecha": "Febrero 2020",
+            "descripcion": "Sigo publicando la Rifa de Verano, porque se han vendido 27 números. \n Hago esta rifa para ayudar nuestros rescatados y amadrinados. Pero sin ayuda va a estar difícil que en marzo podamos pagar pensionados, alimento, veterinario. \n ¿Nos das una pata? 🐾🐾🙏🙏🙏 \n El sorteo será el 17/03 por Lotería de la Ciudad Nocturna.",
+            "imagen": "../images/rifas/rifa_18022020.jpg",
+            "link": "https://www.facebook.com/AdopcionesEspeciales2015/photos/3028901690505970/"
+        }
+    ]
+}
