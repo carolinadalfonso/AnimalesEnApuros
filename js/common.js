@@ -9,10 +9,11 @@ $(document).ready(function () {
     cantLoad += 1;
     if (cantLoad == 2) {
       $("#iframe").hide();
-      $("#confirm").css("display", "block");
-      $("#iframe").attr("height", "300px");
-      $("#iframe").css("margin-top", "-45px");
+      $("#iframe").attr("src", "gracias.html");
       $("#iframe").show();
+      // $("#confirm").css("display", "block");
+      // $("#iframe").attr("height", "300px");
+      // $("#iframe").css("margin-top", "-45px");
     }
   });
 });
@@ -29,12 +30,53 @@ function getData() {
     });
 }
 
+function abrirDialogo(idDialog) {
+  $(idDialog)
+    .dialog({
+      autoOpen: false,
+      modal: true,
+      minWidth: 500,
+      minHeight: "auto",
+      maxHeight: 600,
+      resizable: false,
+      dialogClass: "dialog",
+      show: {
+        effect: "blind",
+        duration: 1000,
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000,
+      },
+      open: function (event, ui) {
+        $("html").css("overflow", "hidden");
+        $(".ui-widget-overlay").width($(".ui-widget-overlay").width() + 18);
+      },
+      close: function (event, ui) {
+        $("html").css("overflow", "auto");
+      },
+    })
+    .dialog("open");
+
+  $(".ui-widget-overlay").click(function () {
+    $(idDialog).dialog("close");
+  });
+}
+
 function getHTMLMascota(mascota) {
-  let html = `<div class="recuadro">
-                <div class="img-mascota"><img src="${mascota.foto}"/></div>
-                <p><b>${mascota.nombre}</b></p>
-                <div class="text">${mascota.descripcion}</div></br>
-                <a href="contacto.html">Adoptarme</a>
+  let sexo = mascota.sexo.toLowerCase();
+  let html = `<div class="card ${sexo}" id="adopcion">
+                <div class="title"><b>${mascota.nombre} / ${mascota.edad}</b></div>
+                <div class="content">
+                  <div class="imagen-mascota"><img src="${mascota.foto}"/></div>
+                </div>
+                <div class="footer">
+                  <a class="donate-button" onclick="abrirDialogo('#dialog_${mascota.nombre}');">Más sobre mí</a>
+                  <a class="donate-button" href="contacto.html">¡Adoptame!</a>
+                </div>
+                <div id="dialog_${mascota.nombre}" style="display: none" title="${mascota.nombre}">
+                  ${mascota.descripcion}
+                </div>
               </div>`;
 
   return html;
@@ -54,7 +96,7 @@ function getHTMLEspecial(especial) {
   }
 
   let htmlFin = `<a href="${especial.link}" target="_blank" >
-                  <div class="imagen-mascota">
+                  <div class="img-especial">
                     <img src="${especial.foto}" />
                   </div>
                 </a>

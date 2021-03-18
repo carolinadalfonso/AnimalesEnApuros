@@ -3,51 +3,35 @@
         "adopciones": [
             {
                 "nombre": "Pablito",
-                "edad": "5 meses",
-                "tamaño": "Mediano",
                 "tipo": "Perro",
+                "sexo": "M",
+                "edad": "2 años",
                 "descripcion": "Pablito es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
                 "foto": "../images/mascotas/pablito.jpeg"
             },
             {
                 "nombre": "Pauli",
-                "edad": "7 meses",
-                "tamaño": "Mediano",
                 "tipo": "Perro",
+                "sexo": "H",
+                "edad": "2 años",
                 "descripcion": "Pauli es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
                 "foto": "../images/mascotas/pauli.jpeg"
             },
             {
                 "nombre": "Coca",
-                "edad": "7 meses",
-                "tamaño": "Mediano",
                 "tipo": "Perro",
-                "descripcion": "Coca es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
+                "sexo": "H",
+                "edad": "2 años",
+                "descripcion": "Mauris ultrices, purus a egestas vestibulum, tellus risus cursus ante, quis sagittis justo velit id ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus pharetra lacus, a bibendum lectus faucibus vitae. In pretium sed justo suscipit pharetra. Sed tempor sapien vel orci egestas, sit amet imperdiet velit venenatis. Mauris mattis consectetur felis, sit amet maximus eros efficitur eget. Nam fermentum ultrices est non dignissim. Nam arcu eros, vehicula ut mauris ac, scelerisque bibendum magna. In ac fringilla massa. Maecenas sed felis leo. Nullam luctus eu leo vel dignissim. Maecenas suscipit elementum ligula nec pellentesque. Sed a erat in lorem maximus volutpat consequat ac urna. Praesent rutrum quam vel dignissim faucibus.Mauris ultrices, purus a egestas vestibulum, tellus risus cursus ante, quis sagittis justo velit id ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus pharetra lacus, a bibendum lectus faucibus vitae. In pretium sed justo suscipit pharetra. Sed tempor sapien vel orci egestas, sit amet imperdiet velit venenatis. Mauris mattis consectetur felis, sit amet maximus eros efficitur eget. Nam fermentum ultrices est non dignissim. Nam arcu eros, vehicula ut mauris ac, scelerisque bibendum magna. In ac fringilla massa. Maecenas sed felis leo. Nullam luctus eu leo vel dignissim. Maecenas suscipit elementum ligula nec pellentesque. Sed a erat in lorem maximus volutpat consequat ac urna. Praesent rutrum quam vel dignissim faucibus.",
                 "foto": "../images/mascotas/coca.jpeg"
             },
             {
                 "nombre": "Rocky",
-                "edad": "2 años",
-                "tamaño": "Grande",
                 "tipo": "Perro",
-                "descripcion": "Rocky es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
+                "sexo": "M",
+                "edad": "2 años",
+                "descripcion": "Rocky es un perro mediano con una historia laaaaa aaaaaaaaaaaaa aaaaaaaa aaaarga gkjdfgkl klfdgjklfdgj lfñkdgkfld fkvdlgjfdkoglj fkdlgkjfdlgdl ",
                 "foto": "../images/mascotas/rocky.jpeg"
-            },
-            {
-                "nombre": "Ugi2",
-                "edad": "2 años",
-                "tamaño": "Grande",
-                "tipo": "Perro",
-                "descripcion": "Perroooooooooooooooooooo",
-                "foto": "https://www.lavanguardia.com/files/image_449_220/uploads/2020/12/01/5fca4b0d19f25.jpeg"
-            },
-            {
-                "nombre": "Ugi2",
-                "edad": "2 años",
-                "tamaño": "Grande",
-                "tipo": "Perro",
-                "descripcion": "Perroooooooooooooooooooo",
-                "foto": "https://www.lavanguardia.com/files/image_449_220/uploads/2020/12/01/5fca4b0d19f25.jpeg"
             }
         ],
         "especiales": [

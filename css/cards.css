@@ -49,7 +49,6 @@
 
 #transferencia.card {
   width: 350px;
-  background-color: #9d5daa;
 }
 
 #transferencia.card .content {
@@ -73,6 +72,49 @@
   height: 50px;
 }
 
+#adopcion.card {
+  margin: 5px;
+  width: 400px;
+}
+
+#adopcion.card.m {
+  background-color: #50b4e9;
+}
+
+#adopcion.card.h {
+  background-color: #eb65aa;
+}
+
+#adopcion.card .content {
+  padding: 0;
+}
+
+#adopcion.card .title {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 700;
+}
+
+#adopcion.card.m .title {
+  background-color: #323a86;
+  color: white;
+}
+
+#adopcion.card.h .title {
+  background-color: #d32b82;
+  color: white;
+}
+
+#adopcion.card .footer {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 a.donate-button {
   font-family: "Poppins";
   background-image: url("../images/favicon.png");
@@ -94,6 +136,7 @@ a.donate-button {
   box-shadow: inset 0 -10px 0 -5px rgba(0, 0, 0, 0.17);
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 a.donate-button:active {
   top: 0.1em;

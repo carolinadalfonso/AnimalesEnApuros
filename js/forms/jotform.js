@@ -1375,9 +1375,10 @@ var JotForm = {
           document.readyState === "interactive"))
     ) {
       ready();
-    } else {
-      document.ready(ready);
     }
+    // } else {
+    //   $(document).ready(ready);
+    // }
   },
 
   /**

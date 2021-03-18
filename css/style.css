@@ -81,6 +81,7 @@ body {
   width: 100%;
   text-align: center;
   font-family: "Poppins";
+  white-space: nowrap;
 }
 
 .navegador li {
@@ -117,19 +118,6 @@ body {
   flex-direction: column;
 }
 
-.recuadro {
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: #ff7ac5;
-  width: 300px;
-  padding: 15px 15px 15px 15px;
-  margin-top: 15px;
-}
-.recuadro img {
-  max-height: 300px;
-}
-
 #side-image {
   width: 250px;
   display: flex;
@@ -138,13 +126,27 @@ body {
 }
 
 .imagen-mascota {
+  max-height: 500px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.imagen-mascota img {
+  max-height: 500px;
+  min-height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-especial {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imagen-mascota img {
+.img-especial img {
   max-height: 500px;
+  max-width: 500px;
 }
 
 #adopcion {
@@ -156,4 +158,52 @@ body {
   background-color: white;
   position: relative;
   display: none;
+}
+
+.dialog.ui-dialog {
+  font-family: "Lora";
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  outline: 0;
+  background: #f5f1e0;
+  border-radius: 20px 20px 10px 10px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.6);
+  position: fixed !important;
+}
+
+.dialog.ui-dialog .ui-dialog-titlebar {
+  position: relative;
+  text-align: center;
+  background: #e2dcc3;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  border: 0 none;
+  border-radius: 20px 20px 0 0;
+}
+
+.dialog.ui-dialog .ui-dialog-titlebar-close {
+  margin-right: 4px;
+}
+
+.dialog.ui-dialog .ui-dialog-content {
+  border-radius: 0 0 10px 10px;
+  margin: 10px 10px 20px 10px;
+}
+
+.dialog.ui-corner-all {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.dialog.ui-widget.ui-widget-content {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  outline: 0;
 }
