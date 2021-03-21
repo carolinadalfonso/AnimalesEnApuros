@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Lora";
-  src: url("../fonts/Lora-Regular.ttf");
+  src: url("../fonts/Lora-Medium.ttf");
 }
 
 body {
@@ -116,13 +116,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-}
-
-#side-image {
-  width: 250px;
-  display: flex;
-  align-items: left;
-  margin-left: 300px;
 }
 
 .imagen-mascota {
