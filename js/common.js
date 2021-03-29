@@ -9,11 +9,9 @@ $(document).ready(function () {
     cantLoad += 1;
     if (cantLoad == 2) {
       $("#iframe").hide();
+      $("#iframe").attr("height", "400px");
       $("#iframe").attr("src", "gracias.html");
       $("#iframe").show();
-      // $("#confirm").css("display", "block");
-      // $("#iframe").attr("height", "300px");
-      // $("#iframe").css("margin-top", "-45px");
     }
   });
 });
@@ -87,22 +85,22 @@ function getHTMLEspecial(especial) {
                 <div class="subtitle">${especial.nombre}</div>
                 <p>${especial.descripcion}</p>`;
 
-  let htmlbuttons = "";
+  let htmlButtons = "";
   for (let i = 0; i < especial.donacion.length; i++) {
     const donacion = especial.donacion[i];
-    htmlbuttons += `<a href="${donacion.link}" target="_blank" class="donate-button">  
+    htmlButtons += `<a href="${donacion.link}" target="_blank" class="donate-button">  
                       Donar $${donacion.monto}
                     </a>`;
   }
 
-  let htmlFin = `<a href="${especial.link}" target="_blank" >
-                  <div class="img-especial">
-                    <img src="${especial.foto}" />
-                  </div>
-                </a>
-              </div>`;
+  let htmlFin = `<div class="center-content">
+                  <a href="${especial.link}" target="_blank" >
+                    <img src="${especial.foto}" />                 
+                  </a>
+                 </div>
+                </div>`;
 
-  return htmlInicio + htmlbuttons + htmlFin;
+  return `${htmlInicio} <div class="center-content">${htmlButtons}</div> ${htmlFin}`;
 }
 
 function getAdopciones(adopciones) {
@@ -138,7 +136,7 @@ function getHTMLRifa(rifa) {
   let html = `<div>
                 <div class="subtitle">${rifa.fecha}</div>
                 <p>${rifa.descripcion}</p>
-                <a href="${rifa.link}" target="_blank"><img src="${rifa.imagen}" width="100%" /></a>
+                <div class="center-content"><a href="${rifa.link}" target="_blank"><img src="${rifa.imagen}" class="imagen-rifa" /></a></div>
               </div>`;
 
   return html;
@@ -159,24 +157,3 @@ function getRifas(rifas) {
     }
   }
 }
-
-// $(function () {
-//   window.onscroll = function () {
-//     stickyHeader();
-//   };
-
-//   var header = $("#header");
-//   var sticky = $("#header").offset().top + 200;
-
-//   function stickyHeader() {
-//     if (window.pageYOffset > sticky) {
-//       $("#header").addClass("sticky");
-//       $("#logo").addClass("logo-sticky");
-//       $("#cat-header").addClass("cat-sticky");
-//     } else {
-//       $("#header").removeClass("sticky");
-//       $("#logo").removeClass("logo-sticky");
-//       $("#cat-header").removeClass("cat-sticky");
-//     }
-//   }
-// });
