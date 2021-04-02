@@ -28,6 +28,35 @@ function getData() {
     });
 }
 
+class Slider {
+  _slideIndex = 1;
+  _id;
+
+  constructor(id) {
+    this._id = id;
+  }
+
+  move(n) {
+    this._showDivs((this._slideIndex += n));
+  }
+
+  _showDivs(n) {
+    let i;
+    let fotos = $(`.slide_${this._id}`);
+
+    if (n > fotos.length) {
+      this._slideIndex = 1;
+    }
+    if (n < 1) {
+      this._slideIndex = fotos.length;
+    }
+    for (i = 0; i < fotos.length; i++) {
+      fotos[i].style.display = "none";
+    }
+    fotos[this._slideIndex - 1].style.display = "block";
+  }
+}
+
 function abrirDialogo(idDialog) {
   $(idDialog)
     .dialog({
@@ -63,21 +92,41 @@ function abrirDialogo(idDialog) {
 
 function getHTMLMascota(mascota) {
   let sexo = mascota.sexo.toLowerCase();
-  let html = `<div class="card ${sexo}" id="adopcion">
-                <div class="title"><b>${mascota.nombre} / ${mascota.edad}</b></div>
-                <div class="content">
-                  <div class="imagen-mascota"><img src="${mascota.foto}"/></div>
-                </div>
-                <div class="footer">
-                  <a class="donate-button" onclick="abrirDialogo('#dialog_${mascota.nombre}');">Más sobre mí</a>
-                  <a class="donate-button" href="contacto.html">¡Adoptame!</a>
-                </div>
-                <div id="dialog_${mascota.nombre}" style="display: none" title="${mascota.nombre}">
-                  ${mascota.descripcion}
-                </div>
-              </div>`;
+  let htmlInicial = `<div class="card ${sexo}" id="adopcion">
+                        <div class="title"><b>${mascota.nombre} / ${mascota.edad}</b></div>`;
+  let htmlImagenes = getHTMLSliderFotos(mascota.fotos, mascota.nombre);
+  let htmlFinal = `     <div class="footer">
+                          <a class="donate-button" onclick="abrirDialogo('#dialog_${mascota.nombre}');">Más sobre mí</a>
+                          <a class="donate-button" href="contacto.html">¡Adoptame!</a>
+                        </div>
+                        <div id="dialog_${mascota.nombre}" style="display: none" title="${mascota.nombre}">
+                          ${mascota.descripcion}
+                        </div>
+                      </div>`;
 
-  return html;
+  return `${htmlInicial} ${htmlImagenes} ${htmlFinal}`;
+}
+
+function getHTMLSliderFotos(fotos, nombreMascota) {
+  let htmlImagenes = "";
+  let htmlFinal = "";
+  let htmlInicial = `<div class="content">
+                      <div class="slider-content slider-display-container">
+                        <div class="imagen-mascota">`;
+
+  if (fotos.length > 1) {
+    htmlFinal = `           <button class="slider-button slider-black slider-display-left" onclick="slider_${nombreMascota}.move(-1)">&#10094;</button>
+                            <button class="slider-button slider-black slider-display-right" onclick="slider_${nombreMascota}.move(1)">&#10095;</button>`;
+  }
+  htmlFinal += `         </div>
+                      </div>
+                    </div>`;
+
+  for (let i = 0; i < fotos.length; i++) {
+    const imagen = fotos[i];
+    htmlImagenes += `<img class="slide_${nombreMascota}" src="${imagen}" />`;
+  }
+  return `${htmlInicial} ${htmlImagenes} ${htmlFinal}`;
 }
 
 function getHTMLEspecial(especial) {
@@ -112,6 +161,9 @@ function getAdopciones(adopciones) {
 
       div.innerHTML = getHTMLMascota(mascota);
       divMascotas.appendChild(div);
+
+      eval(`slider_${mascota.nombre} = new Slider("${mascota.nombre}");`);
+      eval(`slider_${mascota.nombre}.move(0)`);
     }
   }
 }

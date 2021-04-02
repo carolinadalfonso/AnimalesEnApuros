@@ -5,9 +5,13 @@
                 "nombre": "Pablito",
                 "tipo": "Perro",
                 "sexo": "M",
-                "edad": "2 años",
-                "descripcion": "Pablito es un perro mediano con una historia laaaaaaaaaaaaaaaaaaaaaaaaaaaarga",
-                "foto": "../images/mascotas/pablito.jpeg"
+                "edad": "3 o 4 años",
+                "descripcion": "🐾<b>Pablito</b> en Adopción Responsable🐾 </br></br>Está castrado. Pesa unos 40 kilos. Buscamos una familia para él <i>sin otros animales</i>. Y que lo saquen a pasear regularmente o que tenga paseador (actualmente vive en manada y pasea en manada, ya que vive en pensionado con adiestrador). </br></br>Tiene una historia triste, estuvo atado y drogado 1 año, porque lo tenían 2 señoras muy mayores que por ser cachorro las empujaba para jugar. A pesar de eso, <b>ama a los humanos</b>, le gustan los abrazos 🤗, jugar, comer y pasear sin tirar de la correa. 💕</br></br>No se da para cuidar casas ni tenerlo afuera, se da en adopción como <b>parte de la familia</b>. Contrato y seguimiento. Se lleva a domicilio con ingreso al mismo para ver dónde y cómo vivirá Pablito. </br></br><b>¡Contactanos si querés que Pablito sea parte de tu familia! 📞🙌</b></br><i>Lomas de Zamora, Buenos Aires.</i>",
+                "fotos": [
+                    "../images/mascotas/pablito.jpeg",
+                    "../images/mascotas/pablito2.jpeg",
+                    "../images/mascotas/pablito3.jpeg"
+                ]
             },
             {
                 "nombre": "Pauli",
@@ -15,7 +19,9 @@
                 "sexo": "H",
                 "edad": "6 o 7 años",
                 "descripcion": "Ella es <b>Pauli</b>, sigue en Adopción Responsable. </br> Vive en un pensionado, donde convive perfecto con perros y niños. 🐕👧🧒 </br></br> Nosotros somos sus padrinos, y estamos ayudando en la búsqueda de una familia para ella. 🙌🙌 </br> Es tamaño chico, flaquita, juguetona, mimosa. Se lleva bien con perros 🐶, pero no con gatos 🐱. </br></br> María Paula (Pauli) la pasó muy mal los primeros 4 años de su vida, el dueño le pegaba muy feo y Gaby la rescató junto a toda su familia. Ya le cambiaron la vida una vez, ahora tiene que cerrar el ciclo y encontrar a su familia verdadera. </br> <b>¿La adoptás?</b> 😍 </br></br> El teléfono de contacto es de su rescatista y encargada:</br> <b>11-3820-7314</b> (Gaby); y sino podés comunicarte con nosotros. </br> <i>San Martin. Buenos Aires</i>",
-                "foto": "../images/mascotas/pauli.jpeg"
+                "fotos": [
+                    "../images/mascotas/pauli.jpeg"
+                ]
             },
             {
                 "nombre": "Coca",
@@ -23,7 +29,9 @@
                 "sexo": "H",
                 "edad": "6 o 7 años",
                 "descripcion": "Ella es <b>Coca</b>, espera hace 5 años una familia, ¿no es mucho tiempo? 😨 </br></br> Está castrada, es muy cariñosa y de tamaño mediano. Ama los mimos, es besuquera 💋, se lleva bien con perros 🐶, niños 🧒👧, y todos en general. 😍😍 </br> Tiene formulario de adopción, contrato, y se lleva a domicilio. </br></br> Contacto: <b>11-6820-6897</b> (Lara), <b>larapassarelli@hotmail.com </b></br><i>Buenos Aires</i>",
-                "foto": "../images/mascotas/coca.jpeg"
+                "fotos": [
+                    "../images/mascotas/coca.jpeg"
+                ]
             },
             {
                 "nombre": "Rocky",
@@ -31,7 +39,9 @@
                 "sexo": "M",
                 "edad": "4 años",
                 "descripcion": "<b>Rocky</b> es Totoro 🐾🐾 Castrado. 🐶 Totoro es un perro perfecto diría en resumen. </br></br>Le gusta tomar sol. Es muy querido por todos los miembros de la manada. No pasa desapercibido. </br>Le gustan los gatitos, mueve la cola cuando se presenta el michi. 🐶💓🐱 </br>Su cuerpo es simpático. El tiene cara de que todo está bien. <b>Trae esa paz.</b> ☮ No es revoltoso. Es bueno para casa, departamento o campo. Familia típica, parejas o persona sola. Apto para bebés de 0 a 99 años. </br>Es pesado pero no tira de la correa. No se te tira encima siempre y cuando se mantegan los mimos con el en 4 patas o sentado.  </br></br>Texto por <i>Javier</i>, quien lo cuida en su pensionado y lo conoce como nadie. <i>¡¡Gracias Javi!!</i>🐾🙌 </br></br><b>Si ya te enamoraste de Totoro</b>, escribi a su página de <a href=\"https: //www.facebook.com/Rocky-Totoro-en-Adopci%C3%B3n-101236048497368\">Facebook</a> o <a href=\"https://www.instagram.com/rocky_totoro_en.adopcion\">Instagram</a>, o a nosotros en Adoptame.",
-                "foto": "../images/mascotas/rocky.jpeg"
+                "fotos": [
+                    "../images/mascotas/rocky.jpeg"
+                ]
             }
         ],
         "especiales": [

@@ -223,3 +223,52 @@ body {
 .imagen-rifa {
   max-height: 700px;
 }
+
+.slider-button:hover {
+  color: #fff !important;
+  opacity: 0.7;
+  background-color: rgb(83, 83, 83) !important;
+}
+.slider-black,
+.slider-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.slider-display-right {
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  width: 35px;
+  height: 70px;
+  opacity: 0.4;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+.slider-display-left {
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  width: 35px;
+  height: 70px;
+  position: absolute;
+  opacity: 0.4;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
+}
+.slider-content {
+  max-width: 980px;
+}
+.slider-content,
+.slider-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider-tooltip,
+.slider-display-container {
+  position: relative;
+}
