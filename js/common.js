@@ -5,15 +5,18 @@ $(document).ready(function () {
   $("#footer").load("../views/common/footer.html");
   getData();
 
-  document.querySelector("iframe").addEventListener("load", function (e) {
-    cantLoad += 1;
-    if (cantLoad == 2) {
-      $("#iframe").hide();
-      $("#iframe").attr("height", "400px");
-      $("#iframe").attr("src", "gracias.html");
-      $("#iframe").show();
-    }
-  });
+  let query = document.querySelector("iframe");
+  if (query) {
+    query.addEventListener("load", function (e) {
+      cantLoad += 1;
+      if (cantLoad == 2) {
+        $("#iframe").hide();
+        $("#iframe").attr("height", "400px");
+        $("#iframe").attr("src", "gracias.html");
+        $("#iframe").show();
+      }
+    });
+  }
 });
 
 function getData() {
@@ -90,16 +93,16 @@ function abrirDialogo(idDialog) {
   });
 }
 
-function getHTMLMascota(mascota) {
+function getHTMLMascota(mascota, id) {
   let sexo = mascota.sexo.toLowerCase();
   let htmlInicial = `<div class="card ${sexo}" id="adopcion">
                         <div class="title"><b>${mascota.nombre} / ${mascota.edad}</b></div>`;
-  let htmlImagenes = getHTMLSliderFotos(mascota.fotos, mascota.nombre);
+  let htmlImagenes = getHTMLSliderFotos(mascota.fotos, id);
   let htmlFinal = `     <div class="footer">
-                          <a class="donate-button" onclick="abrirDialogo('#dialog_${mascota.nombre}');">Más sobre mí</a>
+                          <a class="donate-button" onclick="abrirDialogo('#dialog_${id}');">Más sobre mí</a>
                           <a class="donate-button" href="contacto.html">¡Adoptame!</a>
                         </div>
-                        <div id="dialog_${mascota.nombre}" style="display: none" title="${mascota.nombre}">
+                        <div id="dialog_${id}" style="display: none" title="${mascota.nombre}">
                           ${mascota.descripcion}
                         </div>
                       </div>`;
@@ -107,7 +110,7 @@ function getHTMLMascota(mascota) {
   return `${htmlInicial} ${htmlImagenes} ${htmlFinal}`;
 }
 
-function getHTMLSliderFotos(fotos, nombreMascota) {
+function getHTMLSliderFotos(fotos, id) {
   let htmlImagenes = "";
   let htmlFinal = "";
   let htmlInicial = `<div class="content">
@@ -115,8 +118,8 @@ function getHTMLSliderFotos(fotos, nombreMascota) {
                         <div class="imagen-mascota">`;
 
   if (fotos.length > 1) {
-    htmlFinal = `           <button class="slider-button slider-black slider-display-left" onclick="slider_${nombreMascota}.move(-1)">&#10094;</button>
-                            <button class="slider-button slider-black slider-display-right" onclick="slider_${nombreMascota}.move(1)">&#10095;</button>`;
+    htmlFinal = `           <button class="slider-button slider-black slider-display-left" onclick="slider${id}.move(-1)">&#10094;</button>
+                            <button class="slider-button slider-black slider-display-right" onclick="slider${id}.move(1)">&#10095;</button>`;
   }
   htmlFinal += `         </div>
                       </div>
@@ -124,9 +127,41 @@ function getHTMLSliderFotos(fotos, nombreMascota) {
 
   for (let i = 0; i < fotos.length; i++) {
     const imagen = fotos[i];
-    htmlImagenes += `<img class="slide_${nombreMascota}" src="${imagen}" />`;
+    htmlImagenes += `<img class="slide_${id}" src="${imagen}" />`;
   }
   return `${htmlInicial} ${htmlImagenes} ${htmlFinal}`;
+}
+
+function getAdopciones(adopciones) {
+  let divMascotas = document.getElementById("adopcion");
+  if (divMascotas != null) {
+    for (let i = 0; i < adopciones.length; i++) {
+      var div = document.createElement("div");
+      const mascota = adopciones[i];
+
+      div.innerHTML = getHTMLMascota(mascota, i);
+      divMascotas.appendChild(div);
+
+      eval(`slider${i} = new Slider(${i});`);
+      eval(`slider${i}.move(0)`);
+    }
+  }
+}
+
+function getCasosEspeciales(especiales) {
+  let divMascotas = document.getElementById("especial");
+  if (divMascotas != null) {
+    for (let i = 0; i < especiales.length; i++) {
+      let div = document.createElement("div");
+      const mascota = especiales[i];
+
+      div.innerHTML = getHTMLEspecial(mascota);
+      if (i != especiales.length - 1) {
+        div.innerHTML += "<p><hr /></p>";
+      }
+      divMascotas.appendChild(div);
+    }
+  }
 }
 
 function getHTMLEspecial(especial) {
@@ -150,38 +185,6 @@ function getHTMLEspecial(especial) {
                 </div>`;
 
   return `${htmlInicio} <div class="center-content">${htmlButtons}</div> ${htmlFin}`;
-}
-
-function getAdopciones(adopciones) {
-  let divMascotas = document.getElementById("adopcion");
-  if (divMascotas != null) {
-    for (let i = 0; i < adopciones.length; i++) {
-      var div = document.createElement("div");
-      const mascota = adopciones[i];
-
-      div.innerHTML = getHTMLMascota(mascota);
-      divMascotas.appendChild(div);
-
-      eval(`slider_${mascota.nombre} = new Slider("${mascota.nombre}");`);
-      eval(`slider_${mascota.nombre}.move(0)`);
-    }
-  }
-}
-
-function getCasosEspeciales(especiales) {
-  let divMascotas = document.getElementById("especial");
-  if (divMascotas != null) {
-    for (let i = 0; i < especiales.length; i++) {
-      let div = document.createElement("div");
-      const mascota = especiales[i];
-
-      div.innerHTML = getHTMLEspecial(mascota);
-      if (i != especiales.length - 1) {
-        div.innerHTML += "<p><hr /></p>";
-      }
-      divMascotas.appendChild(div);
-    }
-  }
 }
 
 function getHTMLRifa(rifa) {
