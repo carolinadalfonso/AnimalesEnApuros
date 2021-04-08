@@ -177,14 +177,17 @@ function getHTMLEspecial(especial) {
                     </a>`;
   }
 
-  let htmlFin = `<div class="center-content">
-                  <a href="${especial.link}" target="_blank" >
-                    <img src="${especial.foto}" />                 
-                  </a>
-                 </div>
-                </div>`;
+  let htmlFin = "";
+  if(especial.link != "#"){
+      htmlFin = `<a href="${especial.link}" target="_blank" >
+                  <img src="${especial.foto}" />                 
+                 </a>`;
+  }
+  else{
+    htmlFin = `<img src="${especial.foto}" />`;  
+  }
 
-  return `${htmlInicio} <div class="center-content">${htmlButtons}</div> ${htmlFin}`;
+  return `${htmlInicio} <div class="center-content">${htmlButtons}</div> <div class="center-content">${htmlFin} </div> </div>`;
 }
 
 function getHTMLRifa(rifa) {
