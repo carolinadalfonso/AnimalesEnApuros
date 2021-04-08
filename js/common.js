@@ -1,8 +1,8 @@
 let cantLoad = 0;
 
 $(document).ready(function () {
-  $("#header").load("../views/common/header.html");
-  $("#footer").load("../views/common/footer.html");
+  $("#header").load("../views/common/header");
+  $("#footer").load("../views/common/footer");
   getData();
 
   let query = document.querySelector("iframe");
@@ -12,7 +12,7 @@ $(document).ready(function () {
       if (cantLoad == 2) {
         $("#iframe").hide();
         $("#iframe").attr("height", "400px");
-        $("#iframe").attr("src", "gracias.html");
+        $("#iframe").attr("src", "gracias");
         $("#iframe").show();
       }
     });
@@ -100,7 +100,7 @@ function getHTMLMascota(mascota, id) {
   let htmlImagenes = getHTMLSliderFotos(mascota.fotos, id);
   let htmlFinal = `     <div class="footer">
                           <a class="donate-button" onclick="abrirDialogo('#dialog_${id}');">Más sobre mí</a>
-                          <a class="donate-button" href="contacto.html">¡Adoptame!</a>
+                          <a class="donate-button" href="contacto">¡Adoptame!</a>
                         </div>
                         <div id="dialog_${id}" style="display: none" title="${mascota.nombre}">
                           ${mascota.descripcion}
@@ -178,13 +178,12 @@ function getHTMLEspecial(especial) {
   }
 
   let htmlFin = "";
-  if(especial.link != "#"){
-      htmlFin = `<a href="${especial.link}" target="_blank" >
+  if (especial.link != "#") {
+    htmlFin = `<a href="${especial.link}" target="_blank" >
                   <img src="${especial.foto}" />                 
                  </a>`;
-  }
-  else{
-    htmlFin = `<img src="${especial.foto}" />`;  
+  } else {
+    htmlFin = `<img src="${especial.foto}" />`;
   }
 
   return `${htmlInicio} <div class="center-content">${htmlButtons}</div> <div class="center-content">${htmlFin} </div> </div>`;
