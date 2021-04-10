@@ -1,8 +1,12 @@
 let cantLoad = 0;
 
 $(document).ready(function () {
-  $("#header").load("../views/common/header");
-  $("#footer").load("../views/common/footer");
+  $("#header").load("../views/common/header.html");
+  $.get("../views/common/footer.html", function (data) {
+    content = data;
+    $("#footer").prepend(content);
+  });
+
   getData();
 
   let query = document.querySelector("iframe");
@@ -12,7 +16,7 @@ $(document).ready(function () {
       if (cantLoad == 2) {
         $("#iframe").hide();
         $("#iframe").attr("height", "400px");
-        $("#iframe").attr("src", "gracias");
+        $("#iframe").attr("src", "../views/gracias.html");
         $("#iframe").show();
       }
     });

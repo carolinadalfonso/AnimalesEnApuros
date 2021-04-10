@@ -66,11 +66,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
   width: 100%;
   background-color: #404040;
   color: whitesmoke;
   font-family: "Poppins";
+  padding: 10px 0;
+}
+
+#trust-logo {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 6px;
 }
 
 #footer .container {
