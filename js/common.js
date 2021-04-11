@@ -182,25 +182,37 @@ function getHTMLEspecial(especial) {
   }
 
   let htmlFin = "";
-  if (especial.link != "#") {
-    htmlFin = `<a href="${especial.link}" target="_blank" >
-                  <img src="${especial.foto}" />                 
-                 </a>`;
+  if (especial.foto != "#") {
+    if (especial.link != "#") {
+      htmlFin = `<a href="${especial.link}" target="_blank" >
+                    <img src="${especial.foto}" />                 
+                   </a>`;
+    } else {
+      htmlFin = `<img src="${especial.foto}" />`;
+    }
   } else {
-    htmlFin = `<img src="${especial.foto}" />`;
+    htmlFin = `<video style="max-height: 500px;" controls autoplay muted="true">
+                <source src="${especial.video}" type="video/webm"/>                 
+               </video>`;
   }
 
   return `${htmlInicio} <div class="center-content">${htmlButtons}</div> <div class="center-content">${htmlFin} </div> </div>`;
 }
 
 function getHTMLRifa(rifa) {
-  let html = `<div>
+  let htmlInicio = `<div>
                 <div class="subtitle">${rifa.fecha}</div>
                 <p>${rifa.descripcion}</p>
-                <div class="center-content"><a href="${rifa.link}" target="_blank"><img src="${rifa.imagen}" class="imagen-rifa" /></a></div>
-              </div>`;
+                <div class="center-content">`;
 
-  return html;
+  let htmlLink = "";
+  if (rifa.link != "#") {
+    htmlLink = `<a href="${rifa.link}" target="_blank"><img src="${rifa.imagen}" class="imagen-rifa" /></a>`;
+  } else {
+    htmlLink = `<img src="${rifa.imagen}" class="imagen-rifa" />`;
+  }
+
+  return `${htmlInicio} ${htmlLink}</div></div>`;
 }
 
 function getRifas(rifas) {
