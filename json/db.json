@@ -11,7 +11,8 @@
                     "../images/mascotas/pablito.jpeg",
                     "../images/mascotas/pablito2.jpeg",
                     "../images/mascotas/pablito3.jpeg"
-                ]
+                ],
+                "adoptado": false
             },
             {
                 "nombre": "Pauli",
@@ -21,7 +22,8 @@
                 "descripcion": "Ella es <b>Pauli</b>, sigue en Adopción Responsable. </br> Vive en un pensionado, donde convive perfecto con perros y niños. 🐕👧🧒 </br></br> Nosotros somos sus padrinos, y estamos ayudando en la búsqueda de una familia para ella. 🙌🙌 </br> Es tamaño chico, flaquita, juguetona, mimosa. Se lleva bien con perros 🐶, pero no con gatos 🐱. </br></br> María Paula (Pauli) la pasó muy mal los primeros 4 años de su vida, el dueño le pegaba muy feo y Gaby la rescató junto a toda su familia. Ya le cambiaron la vida una vez, ahora tiene que cerrar el ciclo y encontrar a su familia verdadera. </br> <b>¿La adoptás?</b> 😍 </br></br> El teléfono de contacto es de su rescatista y encargada:</br> <b>11-3820-7314</b> (Gaby); y sino podés comunicarte con nosotros. </br> <i>San Martin. Buenos Aires</i>",
                 "fotos": [
                     "../images/mascotas/pauli.jpeg"
-                ]
+                ],
+                "adoptado": false
             },
             {
                 "nombre": "Coca",
@@ -31,17 +33,19 @@
                 "descripcion": "Ella es <b>Coca</b>, espera hace 5 años una familia, ¿no es mucho tiempo? 😨 </br></br> Está castrada, es muy cariñosa y de tamaño mediano. Ama los mimos, es besuquera 💋, se lleva bien con perros 🐶, niños 🧒👧, y todos en general. 😍😍 </br> Tiene formulario de adopción, contrato, y se lleva a domicilio. </br></br> Contacto: <b>11-6820-6897</b> (Lara), <b>larapassarelli@hotmail.com </b></br><i>Buenos Aires</i>",
                 "fotos": [
                     "../images/mascotas/coca.jpeg"
-                ]
+                ],
+                "adoptado": false
             },
             {
                 "nombre": "Rocky",
                 "tipo": "Perro",
                 "sexo": "M",
                 "edad": "4 años",
-                "descripcion": "<b><a href=\"#\" style=\"text-decoration:none;cursor:text\">Rocky</a></b> es Totoro 🐾🐾 Castrado.🐶 </br>Le gusta tomar sol. Es muy querido por todos los miembros de la manada. No pasa desapercibido. </br>Le gustan los gatitos, mueve la cola cuando se presenta el michi. 🐶💓🐱 </br> No es revoltoso. Es bueno para casa, departamento o campo. Familia típica, parejas o persona sola. Apto para bebés de 0 a 99 años. </br>Es pesado pero no tira de la correa. No se te tira encima siempre y cuando se mantegan los mimos con el en 4 patas o sentado.  </br>Texto por <i>Javier</i>, quien lo cuida en su pensionado y lo conoce como nadie. <i>¡¡Gracias Javi!!</i>🐾🙌 </br></br>Rocky vivía en la calle, tenía una demodexia avanzada, hasta que Benja y Dai lo rescataron. Vivió un tiempo en un refugio y luego pasó a un pensionado. Tiene hipotiroidismo y debe tomar T4 de por vida; y la pastilla Bravecto cada 3 meses. Hace mucho está listo para que alguien se enamore de él y lo adopte.💗</br></br><b>Si ya te enamoraste</b>, escribí a su página de <a href=\"https: //www.facebook.com/Rocky-Totoro-en-Adopci%C3%B3n-101236048497368\">Facebook</a> o <a href=\"https://www.instagram.com/rocky_totoro_en.adopcion\">Instagram</a>, o a nosotros en Adoptame.",
+                "descripcion": "<b>¡ADOPTADO!🎉🙌 <a href=\"#\" style=\"text-decoration:none;cursor:text\">Rocky</a></b> es Totoro 🐾🐾 Castrado.🐶 </br>Le gusta tomar sol. Es muy querido por todos los miembros de la manada. No pasa desapercibido. </br>Le gustan los gatitos, mueve la cola cuando se presenta el michi. 🐶💓🐱 </br> No es revoltoso. Es bueno para casa, departamento o campo. Familia típica, parejas o persona sola. Apto para bebés de 0 a 99 años. </br>Es pesado pero no tira de la correa. No se te tira encima siempre y cuando se mantegan los mimos con el en 4 patas o sentado.  </br>Texto por <i>Javier</i>, quien lo cuida en su pensionado y lo conoce como nadie. <i>¡¡Gracias Javi!!</i>🐾🙌 </br></br>Rocky vivía en la calle, tenía una demodexia avanzada, hasta que Benja y Dai lo rescataron. Vivió un tiempo en un refugio y luego pasó a un pensionado. Tiene hipotiroidismo y debe tomar T4 de por vida; y la pastilla Bravecto cada 3 meses. Hace mucho está listo para que alguien se enamore de él y lo adopte.💗</br></br><b>Si ya te enamoraste</b>, escribí a su página de <a href=\"https: //www.facebook.com/Rocky-Totoro-en-Adopci%C3%B3n-101236048497368\">Facebook</a> o <a href=\"https://www.instagram.com/rocky_totoro_en.adopcion\">Instagram</a>, o a nosotros en Adoptame.",
                 "fotos": [
                     "../images/mascotas/rocky.jpeg"
-                ]
+                ],
+                "adoptado": true
             }
         ],
         "especiales": [
@@ -164,6 +168,12 @@
         ]
     },
     "rifas": [
+        {
+            "fecha": "<b>Día del Perro 2021</b> ",
+            "descripcion": "<b><i>¡Feliz día al mejor amigo del hombre!</i></b> 🐕🐶🐕‍🦺🐩 </br> Hoy, 2 de junio, se homenajea a todas las mascotas caninas en honor a un animal de la policía que falleció en un acto heroico.</br>",
+            "imagen": "https://noticieros.televisa.com/wp-content/uploads/2020/07/dia-del-perro-21-julio-1.jpg",
+            "link": "https://www.lanacion.com.ar/sociedad/dia-nacional-del-perro-por-que-se-homenajea-hoy-al-mejor-amigo-del-hombre-en-la-argentina-nid2029808/"
+        },
         {
             "fecha": "<b>Día del Animal 2021</b> ",
             "descripcion": "<b><i>¡Feliz día del animal!</i></b> </br> Respetemos a todos los animales por igual. Su vida vale tanto como la nuestra. 🐾🐾 </br> El Día del Animal se celebra en la Argentina todos los 29 de abril en conmemoración del fallecimiento de Ignacio Lucas Albarracín, un abogado que fue el gran pionero en el país en la lucha por los derechos de los animales.</br>🐵🐟🐻🐼🐭🐮🐯🐰🐱🐳🐴🐶🐷🐸🐹🐺🐑🐗🐘🐢🐥🐎🐔🐧🐬🐿🦁🐠🐞🦊🦅🦆🦌",

@@ -102,9 +102,10 @@ function getHTMLMascota(mascota, id) {
   let htmlInicial = `<div class="card ${sexo}" id="adopcion">
                         <div class="title"><b>${mascota.nombre} / ${mascota.edad}</b></div>`;
   let htmlImagenes = getHTMLSliderFotos(mascota.fotos, id);
+  let className = mascota.adoptado ? "donate-button disable" : "donate-button";
   let htmlFinal = `     <div class="footer">
-                          <a class="donate-button" onclick="abrirDialogo('#dialog_${id}');">Más sobre mí</a>
-                          <a class="donate-button" href="contacto">¡Adoptame!</a>
+                          <a class="${className}" onclick="abrirDialogo('#dialog_${id}');">Más sobre mí</a>
+                          <a class="${className}" href="contacto">¡Adoptame!</a>
                         </div>
                         <div id="dialog_${id}" style="display: none" title="${mascota.nombre}">
                           ${mascota.descripcion}

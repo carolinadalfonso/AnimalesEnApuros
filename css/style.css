@@ -279,3 +279,8 @@ body {
 .slider-display-container {
   position: relative;
 }
+.disable {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.4;
+}
