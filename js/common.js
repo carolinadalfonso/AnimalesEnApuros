@@ -24,7 +24,7 @@ $(document).ready(function () {
 });
 
 function getData() {
-  fetch("../json/db.json?v=2")
+  fetch("../json/db.json?v=4")
     .then(function (response) {
       return response.json();
     })
