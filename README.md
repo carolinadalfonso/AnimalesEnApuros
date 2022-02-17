@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/logo.png" width="500px">
+  <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/logo.png" width="400px">
 </p>
 
 *** 
@@ -15,7 +15,7 @@
 
 ## Capturas:
 
-<img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/quienes-somos.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/noticias.png" width="200px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/adopciones.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/donativos.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/casos_especiales.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/contacto.png" width="300px" />
+<img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/quienes-somos.png" width="500px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/adopciones.png" width="500px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/donativos.png" width="500px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/contacto.png" width="500px" />
 
 ## Licencia:
 ```
