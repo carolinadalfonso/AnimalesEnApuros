@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/logo.png" width="600px">
+  <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/logo.png" width="500px">
 </p>
 
 *** 
@@ -15,7 +15,7 @@
 
 ## Capturas:
 
-<img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/quienes-somos.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/noticias.png" width="200px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/adopciones.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/donativos.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/casos_especiales.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/contacto.png" width="300px" />
+<img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/quienes-somos.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/noticias.png" width="200px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/adopciones.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/donativos.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/casos_especiales.png" width="300px" /> <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/capturas/contacto.png" width="300px" />
 
 ## Licencia:
 ```
@@ -93,8 +93,8 @@ modification follow.
 
 ## 
 <p align="center">
-  Hecho en <b>Javascript, HTML y CSS</b>.
+  Hecho en <b>HTML, Javascript y CSS</b>.
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/html-javascript-css.png" height="150px"/>
+  <img src="https://raw.githubusercontent.com/carolinadalfonso/AnimalesEnApuros/main/images/html-javascript-css.png" height="130px"/>
 </p>
